@@ -112,7 +112,9 @@ It an create, store and deactivate the user credentials based on the actiosn of 
 
 #### Lightwight Directory Access Protocol / Active Directory (LDAP/AD):
 
-LDAP is a protocol for querying a directory of users, groups, and computers. Microsoft Active Directory (AD) is the most widely deployed LDAP-based directory — essentially every large enterprise runs it on-premises. <br>
+LDAP is a protocol for querying a directory of users, groups, and computers. Microsoft Active Directory (AD) is the most widely deployed LDAP-based directory (similar to DB) — essentially every large enterprise runs it on-premises. <br>
+
+In Simple analogy, LDAP is the system or the language to query the AD database <br>
 
 Real-world example: When you log into a Windows domain-joined laptop at work, that's Active Directory authenticating you. The IT department stores all user accounts, group memberships, and computer records in AD. <br>
 
