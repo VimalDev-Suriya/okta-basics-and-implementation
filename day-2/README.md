@@ -1,6 +1,6 @@
 # Okta:
 
-There are 3 pillers of Okta,
+Okta is actually SaaS product, There are 3 pillers of Okta,
 
 1. Workforce Identity Cloud (WF) - employees, contracters, partners
 2. Customer Identity - External partners or users to access your app
@@ -22,7 +22,7 @@ Okta acquired Auth0 in 2021. Auth0 targets software developers building consumer
 
 ## Org and Tiers
 
-Org in okta is the dedicated tenant - company's dedicated isolated okta environment with its own URL. So the corresponding organization can manage its own users, configurations etc.
+Org in okta is the dedicated **tenant** - company's dedicated isolated okta environment with its own URL. So the corresponding organization can manage its own users, configurations etc.
 
 1. developer.okta.com -> Free, highly used by developers
 2. my-company.okta-com -> Production apps, where okta gives the dedicated environment to yoru company. This will hold all the identity and access for the users / emplyees.
