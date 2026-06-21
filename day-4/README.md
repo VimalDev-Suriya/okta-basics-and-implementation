@@ -52,5 +52,9 @@ A token, which possess the identity of the user with basic attributes and auth s
 
 1. Headers - It explain the algo used (sha256, sha512 etc), meta data like id
 2. Payload - We call this as **CLAIMS** - Each key-value pair is the claim, which actually holds the details of the customer, like username, email etc
+3. Signature - a tamper detection. Implemented by RSASHA256 - Here is the key rotation takes place.
+
+Scope - request for the access for the corresponding app <br>
+Claim -> list of app, where the corresponding app has the access.
 
 
