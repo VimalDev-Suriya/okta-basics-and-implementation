@@ -23,7 +23,7 @@ This engine, will have the series of API calls. they are,
 4. Remdeiation (its not the API call but the logic to remediate the response of interospect call)
 5. Exchange.
 
-### openid-config API call:
+### Openid-Config API call:
 
 The JSON response of this API response will hold the Meta data of the Okta authorization server. This response can be broadly separated into 3 set,
 
@@ -37,3 +37,13 @@ There are 2 set of API calls, Org specific and Custom Authorization server. Each
 2. Custom Authorizer - /oauth2/{auth_server_id}/.well-known/open-id-configuration
 
 ### Interact
+
+It is the POST call (form-url-encoded request body), with the endpoints and the scopes provided by the /open-id-config API call, we will be calling the /interact API. 
+
+1. This is exactly a OAuth Authorization Code flow + PKCE. Where the `code_verifier` a random string geenrated by the OKTA SDK and the `code_challenge_code` which is the hashed value of `code_verifier`, will also be included into the request.
+2. The response will be the `interaction_handle` token, which is like the session token, where we should be using it for the successive API calls.
+3. If these values get expired, then we should start again with interact API call.
+4. This is not something like `/authorize` API call.
+5. **redirect_uri** (RU) should be registerd in the Okta.
+
+### Interospect
