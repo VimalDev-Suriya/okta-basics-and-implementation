@@ -1,4 +1,4 @@
-# Security Assertion Markup Language:
+# Security Assertion Markup Language (SAML):
 
 Before SAML, every application has its own user and therirown password, so each apps handles its own authentication. Now consider the scenarion of the organization if the org has 50 apps, everything will have its own authn/z validation, which is huge. After SAML, its handles everything into single sign on (SSO).
 
